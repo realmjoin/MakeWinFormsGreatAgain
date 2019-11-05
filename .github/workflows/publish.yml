@@ -23,6 +23,8 @@ jobs:
         name: release
         path: bin/Release
     - name: Push with dotnet nuget
+      env:
+        NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
       run: |
         $file = Get-ChildItem -File bin/Release/MakeWinFormsGreatAgain.*.nupkg
         Write-Host "Publish $file"
