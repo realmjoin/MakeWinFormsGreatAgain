@@ -2,7 +2,7 @@ name: Build using .NET Core
 on:
   push:
     branches:
-      - **
+      - '**'
 
 jobs:
   build:
