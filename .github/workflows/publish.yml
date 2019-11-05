@@ -26,5 +26,5 @@ jobs:
       run: |
         $file = Get-ChildItem -File bin/Release/MakeWinFormsGreatAgain.*.nupkg
         Write-Host "Publish $file"
-        dotnet nuget -h
+        Write-Host "$env:NUGET_API_KEY".Length
         dotnet nuget push "$file" -s "https://api.nuget.org/v3/index.json" -k "$env:NUGET_API_KEY"
