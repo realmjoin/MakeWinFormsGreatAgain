@@ -1,4 +1,4 @@
-name: Publish
+name: Publish using .NET Core
 on:
   push:
     tags:
