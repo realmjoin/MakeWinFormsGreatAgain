@@ -13,5 +13,10 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 2.2.108
-    - name: Build with dotnet
-      run: dotnet build --configuration Release
+    - name: Pack with dotnet
+      run: dotnet pack --configuration Release
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: docker-image
+        path: bin/Release
