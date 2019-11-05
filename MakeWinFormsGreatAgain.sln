@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeWinFormsGreatAgain", "MakeWinFormsGreatAgain.csproj", "{2439D1AD-75E0-462E-B5EC-1BB71A4C894F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakeWinFormsGreatAgain", "MakeWinFormsGreatAgain.csproj", "{2439D1AD-75E0-462E-B5EC-1BB71A4C894F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{DAE09F77-6BCC-409C-934F-CD19FCDFEC1A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{AA0CD735-5FF5-45E2-B4A2-66C0B16FF5E4}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\dotnetcore.yml = .github\workflows\dotnetcore.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +25,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AA0CD735-5FF5-45E2-B4A2-66C0B16FF5E4} = {DAE09F77-6BCC-409C-934F-CD19FCDFEC1A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F0BE9D2A-467A-4763-B986-2FA18E4EBDA2}
