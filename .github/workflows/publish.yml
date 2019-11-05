@@ -23,4 +23,4 @@ jobs:
         name: release
         path: bin/Release
     - name: Push with dotnet nuget
-      run: dotnet nuget push (Get-ChildItem -File bin/Release/MakeWinFormsGreatAgain.*.nupkg) -k "$env:NUGET_API_KEY" -s "https://api.nuget.org/v3/index.json"
+      run: dotnet nuget push (Get-ChildItem -File bin/Release/MakeWinFormsGreatAgain.*.nupkg) -k $env:NUGET_API_KEY -s https://api.nuget.org/v3/index.json
