@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace ToppyMcTopface
+namespace Mwfga
 {
     public class GreatScaling
     {
