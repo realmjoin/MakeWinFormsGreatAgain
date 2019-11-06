@@ -14,7 +14,7 @@ namespace ToppyMcTopface
             this.form = form;
         }
 
-        public void AddForFontScaling(Control control)
+        public void PrepareFontScaling(Control control)
         {
             fontScaling.Add((control, control.Font.SizeInPoints / form.Font.SizeInPoints));
         }
