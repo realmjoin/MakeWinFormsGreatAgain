@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net471</TargetFramework>
     <RootNamespace>Mwfga</RootNamespace>
-    <Version>0.9.0</Version>
+    <Version>0.9.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
