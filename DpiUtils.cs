@@ -12,16 +12,11 @@ namespace Mwfga
      */
     public static class DpiUtils
     {
-        private struct SuggestedBoundsRect
-        {
-            public int Left;
-            public int Top;
-            public int Right;
-            public int Bottom;
-        }
+        [DllImport("user32.dll")]
+        public static extern int GetDpiForSystem();
 
         [DllImport("user32.dll")]
-        private static extern int GetDpiForWindow(IntPtr hWnd);
+        public static extern int GetDpiForWindow(IntPtr hWnd);
 
         public static void InitPerMonitorDpi(Form form)
         {
@@ -56,6 +51,14 @@ namespace Mwfga
             {
                 if (ptr != IntPtr.Zero) Marshal.FreeHGlobal(ptr);
             }
+        }
+
+        private struct SuggestedBoundsRect
+        {
+            public int Left;
+            public int Top;
+            public int Right;
+            public int Bottom;
         }
     }
 }
