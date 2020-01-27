@@ -17,6 +17,18 @@ namespace Mwfga
             cp.ExStyle |= GreatMessages.WS_EX_COMPOSITED;
         }
 
+        public static void SetMaximizeBox(this CreateParams cp, bool enabled)
+        {
+            if (enabled) cp.ExStyle |= GreatMessages.WS_MAXIMIZEBOX;
+            else cp.ExStyle &= ~GreatMessages.WS_MAXIMIZEBOX;
+        }
+
+        public static void SetMinimizeBox(this CreateParams cp, bool enabled)
+        {
+            if (enabled) cp.ExStyle |= GreatMessages.WS_MINIMIZEBOX;
+            else cp.ExStyle &= ~GreatMessages.WS_MINIMIZEBOX;
+        }
+
         public static void MoveFormFromChild(this Control child)
         {
             var form = child.FindForm();
