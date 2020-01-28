@@ -10,6 +10,7 @@ namespace Mwfga
 
         public const int HT_CAPTION = 0x0002;
 
+        public const int WS_EX_TOPMOST = 0x00000008;
         public const int WS_EX_TRANSPARENT = 0x00000020;
         public const int WS_EX_LAYERED = 0x00080000;
         public const int WS_EX_COMPOSITED = 0x02000000;

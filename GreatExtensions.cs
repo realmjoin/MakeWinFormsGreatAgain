@@ -29,6 +29,12 @@ namespace Mwfga
             else cp.ExStyle &= ~GreatMessages.WS_MINIMIZEBOX;
         }
 
+        public static void SetTopMost(this CreateParams cp, bool enabled)
+        {
+            if (enabled) cp.ExStyle |= GreatMessages.WS_EX_TOPMOST;
+            else cp.ExStyle &= ~GreatMessages.WS_EX_TOPMOST;
+        }
+
         public static void MoveFormFromChild(this Control child)
         {
             var form = child.FindForm();
